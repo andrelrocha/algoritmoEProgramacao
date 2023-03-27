@@ -1,11 +1,9 @@
 {
     "files.associations": {
-        "idade.C": "cpp",
-        "rascunho.C": "cpp",
-        "questao9.C": "cpp",
-        "questao3.C": "cpp",
+        "questao5.C": "cpp",
+        "fatorial.C": "cpp",
         "questao1.C": "cpp",
         "questao2.C": "cpp",
-        "questao4.C": "cpp"
+        "questao3.C": "cpp"
     }
 }
