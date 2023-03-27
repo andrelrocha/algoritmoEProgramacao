@@ -1,5 +1,11 @@
 {
     "files.associations": {
-        "idade.C": "cpp"
+        "idade.C": "cpp",
+        "rascunho.C": "cpp",
+        "questao9.C": "cpp",
+        "questao3.C": "cpp",
+        "questao1.C": "cpp",
+        "questao2.C": "cpp",
+        "questao4.C": "cpp"
     }
 }
