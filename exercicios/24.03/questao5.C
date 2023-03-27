@@ -5,7 +5,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-#include <stdbool.h>
 
 int main () {
     
@@ -13,16 +12,16 @@ int main () {
 
     //recebe a, b e c
     for (int i = 0; i < 3; i ++) {
-        printf("digite o numero %d", (i+1));
+        printf("digite o lado %d: ", (i+1));
         int temporaria;
         scanf(" %d", &temporaria);
         variaveis[i] = temporaria;
     }
 
     //checa se forma triangulo
-    int a = variaveis[1];
-    int b = variaveis[2];
-    int c = variaveis [3];
+    int a = variaveis[0];
+    int b = variaveis[1];
+    int c = variaveis [2];
 
     if ((a + b) < c || ((b + c) < a || (a + c) < b)) {
         printf("os 3 valores nao conseguem formar triangulos.");
@@ -30,28 +29,13 @@ int main () {
     } else {
 
         if (a == b && b == c) {
-            printf("Voce formou um triangulo equilatero");
+            printf("Voce formou um triangulo equilatero\n");
         } else if ((a == b) || (b == c) || (a == c)) {
-            printf ("voce formou um triangulo isoceles");
-        } else printf("voce formou um triangulo escaleno");
-
-        
+            printf ("voce formou um triangulo isoceles\n");
+        } else printf("voce formou um triangulo escaleno\n");
     }
 
-    
+    float alturaTriangulo = sqrt(fabs(pow(b,2)) - (pow((a/2),2)));
+    float areaTriangulo = (a * alturaTriangulo) / 2;
+    printf("o triangulo formado possui area de %.2lf u.c.", areaTriangulo);
 }
-
-
-
-//area do triangulo b.h/2
-
-//Um triângulo é chamado de equilátero se todos os lados possuem a mesma medida. Um triângulo é chamado de isósceles se dois lados possuem a mesma medida. Um triângulo é chamado de escaleno se todos os lados possuem medidas diferentes.
-
-//área do triângulo equilátero, multiplicamos o quadrado da medida do lado pela raiz de 3 dividido por 4.
-//altura = (base/2)^2 + (altura^2) = hipotenusa^2
-
-//float num, raiz;
-//printf("Digite um número: ");
-//scanf("%f", &num);
-//raiz = sqrt(num);
-//printf("A raiz quadrada de %.2f é %.2f\n", num, raiz);
