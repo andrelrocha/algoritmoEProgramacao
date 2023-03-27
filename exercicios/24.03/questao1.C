@@ -1,8 +1,9 @@
+//questao 1
+//Escreva um algoritmo que leia a idade de uma pessoa expressa em anos, meses e dias e mostre-a expressa apenas em dias.
+
 #include <stdio.h>
 #include <time.h>
 #include <stdbool.h>
-
-//Escreva um algoritmo que leia a idade de uma pessoa expressa em anos, meses e dias e mostre-a expressa apenas em dias.
 
 int diaAtual () {
     time_t data;
@@ -28,20 +29,4 @@ int main () {
 
     printf("Qual o dia do seu aniversário?\n");
     scanf(" %d", &dias);
-}
-
-
-//3 questão
-int questao3 () {
-int a, b;
-scanf(" %d", &a);
-scanf(" %d", &b);
-
-bool divisivel = (a%b == 0);
-
-if (divisivel) {
-    printf("sao multiplos");
-} else {
-    printf("nao sao multiplos");
-}
 }
