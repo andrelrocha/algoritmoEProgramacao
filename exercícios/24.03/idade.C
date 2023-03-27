@@ -9,7 +9,7 @@ int diaAtual () {
     struct tm *data_atual;
     data_atual = localtime(&data);
     int dia = data_atual->tm_mday;
-    //int dia = (*data_atual).tm_mday;
+    //int dia = (*data_atual).tm_mday; (acessar elemento de uma struct)
     return dia;
 }
 
